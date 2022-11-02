@@ -73,7 +73,7 @@
 $(document).ready(function()
 {
 	$.get('https://muhsite.atwebpages.com/news/' ,null,function(result) {
-		$(result).find('div.col2').each(function(){
+		$(result).find('html').each(function(){
 			$("#news_frame").html($(this));
 		});
 	},'html');
