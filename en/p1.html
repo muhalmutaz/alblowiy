@@ -76,7 +76,7 @@ $(document).ready(function() {
         url: 'https://muhsite.atwebpages.com/news/',
         dataType: "html",
         success: function(result) {
-            console.log(data);
+            console.log(result);
 			$(result).find('.col2').each(function(){
 				$("#news_frame").html($(this));
 				console.log("found")
