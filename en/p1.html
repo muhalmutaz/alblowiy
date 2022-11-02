@@ -70,10 +70,9 @@
           <div id="news_frame" width="100%" height="786px"></div>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
           <script type="text/javascript"> // UI effects
-$(document).ready(function()
-{
+$(document).ready(function(){
 	$.get('https://muhsite.atwebpages.com/news/' ,null,function(result) {
-		$(result).find('html').each(function(){
+		$(result).find('.col2').each(function(){
 			$("#news_frame").html($(this));
 		});
 	},'html');
