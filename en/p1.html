@@ -74,6 +74,7 @@ $(document).ready(function(){
 	$.get('https://muhsite.atwebpages.com/news/' ,null,function(result) {
 		$(result).find('.col2').each(function(){
 			$("#news_frame").html($(this));
+			console.log("found")
 		});
 	},'html');
 }); </script>
