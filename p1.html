@@ -12,6 +12,13 @@
     <meta name="generator" content="Nicepage 4.19.3, nicepage.com">
     <meta property="og:title" content="جامع والدة أحمد البلوي">
     <meta property="og:image" content="images/-01.png">
+    <script type="text/javascript"> // UI effects
+$(document).ready(function()
+{
+	$.get('http://muhsite.atwebpages.com/news/' ,null,function(result) {
+    	$("#news_frame").html(result);
+	},'html');
+}); </script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
     
@@ -67,7 +74,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-align-center u-text u-text-custom-color-2 u-text-1">لوحة الإعلانات</h1>
         <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">
-          <iframe src="http://muhsite.atwebpages.com/news/" referrerpolicy="no-referrer" width="100%" height="786px"></iframe>
+          <iframe id="news_frame" src="http://muhsite.atwebpages.com/news/" referrerpolicy="no-referrer" width="100%" height="786px"></iframe>
         </div>
       </div>
     </section>
